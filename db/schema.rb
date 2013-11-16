@@ -11,6 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20131116151202) do
+
+  create_table "venues", :force => true do |t|
+    t.float    "latitude"
+    t.float    "longitud"
+    t.string   "name"
+    t.string   "address"
+    t.string   "city"
+    t.string   "country",    :default => "Colombia"
+    t.string   "ower"
+    t.string   "venue_type"
+    t.string   "slug"
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
+  end
 
 end
