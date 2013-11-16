@@ -44,14 +44,11 @@ GEM
     arel (3.0.3)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
-<<<<<<< HEAD
-=======
     better_errors (1.0.1)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
->>>>>>> gems
     bourbon (3.1.8)
       sass (>= 3.2.0)
       thor
@@ -64,8 +61,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
-<<<<<<< HEAD
-=======
     columnize (0.3.6)
     debug_inspector (0.0.2)
     debugger (1.6.2)
@@ -75,7 +70,6 @@ GEM
     debugger-linecache (1.2.0)
     debugger-ruby_core_source (1.2.3)
     decent_exposure (2.3.0)
->>>>>>> gems
     devise (3.2.1)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -84,24 +78,17 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.0.2)
-<<<<<<< HEAD
-=======
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
     figaro (0.7.0)
       bundler (~> 1.0)
       rails (>= 3, < 5)
->>>>>>> gems
     formtastic (2.2.1)
       actionpack (>= 3.0)
     friendly_id (4.0.10.1)
       activerecord (>= 3.0, < 4.0)
     geocoder (1.1.8)
-<<<<<<< HEAD
-    has_scope (0.6.0.rc)
-      actionpack (>= 3.2, < 5)
-      activesupport (>= 3.2, < 5)
-=======
+    gmapsjs (0.2.30.1)
     haml (4.0.4)
       tilt
     haml-rails (0.4)
@@ -113,7 +100,6 @@ GEM
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
     hashie (2.0.5)
->>>>>>> gems
     hike (1.2.3)
     httpauth (0.2.0)
     i18n (0.6.5)
@@ -127,11 +113,8 @@ GEM
     jquery-ui-rails (4.1.0)
       railties (>= 3.1.0)
     json (1.8.1)
-<<<<<<< HEAD
-=======
     jwt (0.1.8)
       multi_json (>= 1.5)
->>>>>>> gems
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -143,10 +126,6 @@ GEM
       activerecord (~> 3.1)
       activesupport (~> 3.1)
       polyamorous (~> 0.5.0)
-<<<<<<< HEAD
-    mime-types (1.25)
-    multi_json (1.8.2)
-=======
     method_source (0.8.2)
     mime-types (1.25)
     multi_json (1.8.2)
@@ -172,7 +151,6 @@ GEM
     omniauth-twitter (1.0.1)
       multi_json (~> 1.3)
       omniauth-oauth (~> 1.0)
->>>>>>> gems
     orm_adapter (0.5.0)
     pg (0.17.0)
     polyamorous (0.5.0)
@@ -246,17 +224,6 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin
-<<<<<<< HEAD
-  coffee-rails (~> 3.2.1)
-  friendly_id (~> 4.0.9)
-  geocoder (= 1.1.8)
-  jquery-ui-rails
-  kaminari
-  pg
-  rails (= 3.2.14)
-  rest-client (~> 1.6.7)
-  sass-rails (~> 3.2.3)
-=======
   better_errors
   binding_of_caller
   coffee-rails (~> 3.2.1)
@@ -264,6 +231,7 @@ DEPENDENCIES
   figaro
   friendly_id (~> 4.0.9)
   geocoder (= 1.1.8)
+  gmapsjs
   haml
   haml-rails (>= 0.3.4)
   jquery-ui-rails
@@ -277,5 +245,4 @@ DEPENDENCIES
   rest-client (~> 1.6.7)
   sass-rails (~> 3.2.3)
   sextant (~> 0.2.4)
->>>>>>> gems
   uglifier (>= 1.0.3)
