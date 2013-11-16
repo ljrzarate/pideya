@@ -4,6 +4,23 @@
 
 jQuery ->
   #########################
+  # Get user location
+  #########################
+  x = document.getElementById("map")
+  getLocation = ->
+    if navigator.geolocation
+      navigator.geolocation.getCurrentPosition showPosition
+    else
+      x.innerHTML = "Geolocation is not supported by this browser."
+  showPosition = (position) ->
+    map.addMarker(
+     lat: position.coords.latitude
+     lng: position.coords.longitude
+     icon: "http://maps.google.com/intl/en_us/mapfiles/ms/micons/blue.png"
+    )
+
+
+  #########################
   # Creating the map
   #########################
   window.map = new GMaps(
@@ -13,6 +30,7 @@ jQuery ->
   )
 
   if google.maps
+    getLocation()
     $.ajax(
       url: "/get_venues.json"
       type: "GET"
@@ -31,3 +49,5 @@ jQuery ->
         console.log status
         console.log errorThrown
     )
+
+
