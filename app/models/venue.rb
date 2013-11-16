@@ -1,7 +1,9 @@
 class Venue < ActiveRecord::Base
   extend FriendlyId
+  acts_as_api
 
-  attr_accessible :address, :latitude, :longitude, :name, :ower, :venue_type, :slug, :city, :country
+
+  attr_accessible :address, :latitude, :longitude, :name, :ower, :venue_type, :slug, :city, :country, :description
 
   validates :name, presence: true
   validates :address, presence: true
@@ -11,8 +13,6 @@ class Venue < ActiveRecord::Base
   after_validation :geocode
 
   geocoded_by :full_address, latitude: :latitude, longitude: :longitude
-
-  acts_as_api
 
   api_accessible :venues do |t|
     t.add :name

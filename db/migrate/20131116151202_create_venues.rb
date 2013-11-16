@@ -10,6 +10,7 @@ class CreateVenues < ActiveRecord::Migration
       t.string :ower
       t.string :venue_type
       t.string :slug
+      t.text   :description
 
       t.timestamps
     end

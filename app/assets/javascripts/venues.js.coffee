@@ -4,23 +4,6 @@
 
 jQuery ->
   #########################
-  # Get user location
-  #########################
-  x = document.getElementById("map")
-  getLocation = ->
-    if navigator.geolocation
-      navigator.geolocation.getCurrentPosition showPosition
-    else
-      x.innerHTML = "Geolocation is not supported by this browser."
-  showPosition = (position) ->
-    map.addMarker(
-     lat: position.coords.latitude
-     lng: position.coords.longitude
-     icon: "http://maps.google.com/intl/en_us/mapfiles/ms/micons/blue.png"
-    )
-
-
-  #########################
   # Creating the map
   #########################
   window.map = new GMaps(
@@ -30,18 +13,44 @@ jQuery ->
   )
 
   if google.maps
+    x = document.getElementById("map")
+    getLocation = ->
+      if navigator.geolocation
+        navigator.geolocation.getCurrentPosition showPosition
+      else
+        x.innerHTML = "Geolocation is not supported by this browser."
+    showPosition = (position) ->
+      # Set global varibales latitude and longitud for current user
+      window.user_latitude = position.coords.latitude
+      window.user_longitude = position.coords.longitude
+
+      map.setCenter(window.user_latitude, window.user_longitude)
+
+      map.addMarker(
+       lat: window.user_latitude
+       lng: window.user_longitude
+       icon: "http://maps.google.com/intl/en_us/mapfiles/ms/micons/blue.png"
+      )
+
     getLocation()
     $.ajax(
       url: "/get_venues.json"
       type: "GET"
       dataType: "json"
       success: (data)->
-        console.log data["venues"][0]["name"]
         venues = data["venues"]
         $.each(venues, (index, value)->
+          name = venues[index]["name"]
+          address = venues[index]["address"]
+          description = venues[index]["description"]
+          owner = venues[index]["owner"]
           map.addMarker(
             lat: venues[index]["latitude"]
             lng: venues[index]["longitude"]
+            infoWindow:
+              content: '<p>'+ name + '</p>'
+            click: (e)->
+              console.log e.position["ob"]
           )
         )
       error: (data, status, errorThrown) ->
