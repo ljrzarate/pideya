@@ -10,6 +10,7 @@ gem 'kaminari'
 gem "jquery-ui-rails"
 gem 'friendly_id', '~> 4.0.9'
 gem "geocoder", "1.1.8"
+gem 'gmapsjs'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
