@@ -3,7 +3,7 @@ class Venue < ActiveRecord::Base
   acts_as_api
 
 
-  attr_accessible :address, :latitude, :longitude, :name, :ower, :venue_type, :slug, :city, :country, :description
+  attr_accessible :address, :latitude, :longitude, :name, :owner, :venue_type, :slug, :city, :country, :description, :phone
 
   validates :name, presence: true
   validates :address, presence: true
@@ -19,6 +19,8 @@ class Venue < ActiveRecord::Base
     t.add :address
     t.add :latitude
     t.add :longitude
+    t.add :description
+    t.add :phone
   end
 
   def full_address

@@ -44,13 +44,16 @@ jQuery ->
           address = venues[index]["address"]
           description = venues[index]["description"]
           owner = venues[index]["owner"]
+          phone = venues[index]["phone"]
           map.addMarker(
             lat: venues[index]["latitude"]
             lng: venues[index]["longitude"]
             infoWindow:
-              content: '<p>'+ name + '</p>'
+              content: '<p>'+ name + '</p>' + '<p>' +  phone + '</p>'
             click: (e)->
-              console.log e.position["ob"]
+              msj = '<h3>' + name + '</h3> <br> <p>' + description + '</p>'
+              alertify.alert(msj)
+              return false
           )
         )
       error: (data, status, errorThrown) ->
