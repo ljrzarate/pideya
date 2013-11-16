@@ -1,0 +1,14 @@
+postgres: &postgres
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  pool: 5
+  min_messages: warning
+
+development:
+  <<: *postgres
+  database: pideya_development
+
+test:
+  <<: *postgres
+  database: pideya_test
