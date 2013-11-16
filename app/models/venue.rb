@@ -12,6 +12,15 @@ class Venue < ActiveRecord::Base
 
   geocoded_by :full_address, latitude: :latitude, longitude: :longitude
 
+  acts_as_api
+
+  api_accessible :venues do |t|
+    t.add :name
+    t.add :address
+    t.add :latitude
+    t.add :longitude
+  end
+
   def full_address
     "#{address}, #{city}, #{country}"
   end

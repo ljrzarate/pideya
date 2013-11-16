@@ -10,7 +10,6 @@ gem 'kaminari'
 gem "jquery-ui-rails"
 gem 'friendly_id', '~> 4.0.9'
 gem "geocoder", "1.1.8"
-gem 'gmapsjs'
 gem "omniauth", "~> 1.1.4"
 gem "omniauth-twitter", "~> 1.0.1"
 gem "omniauth-facebook", "~> 1.4.1"
@@ -18,6 +17,7 @@ gem "figaro"
 gem "decent_exposure", "~> 2.3.0"
 gem "haml"
 gem 'haml-rails', '>= 0.3.4'
+gem "acts_as_api", "0.4.1"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
