@@ -1,12 +1,10 @@
 class Venue < ActiveRecord::Base
   extend FriendlyId
 
-  attr_accessible :address, :latitude, :longitud, :name, :ower, :venue_type, :slug, :city, :country
+  attr_accessible :address, :latitude, :longitude, :name, :ower, :venue_type, :slug, :city, :country
 
   validates :name, presence: true
   validates :address, presence: true
-  validates :latitude, presence: true
-  validates :longitud, presence: true
 
   friendly_id :name, use: :slugged
 

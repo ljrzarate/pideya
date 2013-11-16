@@ -2,7 +2,7 @@ class CreateVenues < ActiveRecord::Migration
   def change
     create_table :venues do |t|
       t.float :latitude
-      t.float :longitud
+      t.float :longitude
       t.string :name
       t.string :address
       t.string :city
