@@ -8,8 +8,6 @@ class Venue < ActiveRecord::Base
   validates :name, presence: true
   validates :address, presence: true
 
-  friendly_id :name, use: :slugged
-
   geocoded_by :latitude => :latitude, :longitude => :longitude
 
   api_accessible :venues do |t|

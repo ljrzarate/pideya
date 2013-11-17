@@ -11,9 +11,7 @@ class VenuesController < ApplicationController
 
   def create
     @venue = Venue.new(params[:venue])
-    p @venue
     if @venue.save
-      p @venue.errors
       redirect_to venues_path
     else
       render action: :new
@@ -21,8 +19,7 @@ class VenuesController < ApplicationController
   end
 
   def get_venues
-    @venues = Venue.all
-    p @venues
+    @venues = Venue.scoped
     respond_to do |format|
       format.json { render_for_api :venues, json: @venues }
     end
