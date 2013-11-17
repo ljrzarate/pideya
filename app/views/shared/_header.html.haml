@@ -10,10 +10,11 @@
         %a{href: "#"} BLOG
       %li
         %a{href: "#"} CONTACTO      
-  .user-section
-    .img
-      %img{:src => "#{current_user.image}", :alt => ""}/
-    .body
-      %h2
-        = current_user.name
-      %a{:href =>  signout_path } SIGN OUT
+  - if current_user
+    .user-section
+      .img
+        %img{:src => "#{current_user.image}", :alt => ""}/
+      .body
+        %h2
+          = current_user.name
+        %a{:href =>  signout_path } SIGN OUT
