@@ -1,27 +1,31 @@
 #map_new_venue
-
 .form_new_venue
-  = form_for @venue, html:{multipart: true, class: "form-horizontal"} do |f|
-    %div
-      = f.label :name
-      = f.text_field :name
-    %div
-      = f.label :address
-      = f.text_field :address
-    %div
-      = f.label :description
-      = f.text_field :description
-    %div
-    %div
-      = f.label :owner
-      = f.text_field :owner
-    %div
-      = f.hidden_field :latitude
-    %div
-      = f.hidden_field :longitude
-    %div
-      %br
-      = f.submit "Save Venue", class: "btn btn-primary"
+  .wrapper
+    .form
+      %p.title AGREGAR LOCAL
+      %p.desc Llenar los campos a continucacion
+      %section
+        = form_for @venue, html:{multipart: true, class: "form-horizontal"} do |f|
+          = f.label :name
+          %br
+          = f.text_field :name, class: "text"
+          %br
+          = f.label :address
+          %br
+          = f.text_field :address, class: "text"
+          %br
+          = f.label :description
+          %br
+          = f.text_field :description, class: "text"
+          %br
+          = f.label :owner
+          %br
+          = f.text_field :owner, class: "text"
+          %br
+          = f.hidden_field :latitude
+          = f.hidden_field :longitude
+          %br
+          = f.submit "SAVE VENUE", class: "save"
 
 - content_for :javascript do
   = javascript_include_tag "venues_new"

@@ -19,8 +19,8 @@ jQuery ->
         lng: e.latLng.lng()
         draggable: true
         drag: (e)->
-          $("#sensor_latitude").val(e.latLng.lat())
-          $("#sensor_longitude").val(e.latLng.lng())
+          $("#venue_latitude").val(e.latLng.lat())
+          $("#venue_longitude").val(e.latLng.lng())
       )
   )
 

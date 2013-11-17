@@ -8,8 +8,8 @@ header{
 }
 
 .user-section{
-  position: absolute;   
-  left:1130px; 
+  position: absolute;
+  left:1130px;
   margin-top:-40px;
   width:60px;
   .img{
@@ -27,8 +27,8 @@ header{
 }
 
 .user-section .body{
-  position: absolute;   
-  left:1160px;   
+  position: absolute;
+  left:1160px;
   left: 70px;
   top: 0px;
 }
@@ -322,4 +322,54 @@ footer .social{
   width: 323px;
   opacity: 0.6;
   border-radius: 10px;
+}
+
+/*FORMULARIO*/
+
+.text{
+  text-decoration: none;
+  background-color: white;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  height: 30px;
+  width: 240px;
+  margin-bottom: 20px;
+}
+
+.wrapper .form{
+  border-radius: 10px;
+  background-color: #c6c6c6;
+  color: red;
+  width: 323px;
+  height: 530px;
+  font-family:sans-serif;
+}
+
+.wrapper .form .title{
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.wrapper .form .desc{
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  color: #666666;
+}
+.wrapper .form section{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper .form section .save{
+  border-radius: 3px;
+  margin-right: 40px;
+  float:right;
+  text-decoration: none;
+  color:#fff;
+  font-family: sans-serif;
+  padding: 5px;
+  background-color: red;
 }
