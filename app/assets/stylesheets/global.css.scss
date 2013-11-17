@@ -372,4 +372,22 @@ footer .social{
   font-family: sans-serif;
   padding: 5px;
   background-color: red;
+  cursor: pointer
+}
+
+button.save{
+  border-radius: 3px;
+  margin-right: 40px;
+  float:right;
+  text-decoration: none;
+  color:#fff;
+  font-family: sans-serif;
+  padding: 5px;
+  background-color: red;
+  cursor: pointer;
+}
+
+button.save a{
+  text-decoration: none;
+  color: white;
 }

@@ -1,5 +1,5 @@
 %header
-  =image_tag('logo.png', class: 'logo')
+  =link_to image_tag('logo.png', class: 'logo'), root_path
   %navigation
     %ul
       %li
@@ -9,7 +9,9 @@
       %li
         %a{href: "#"} BLOG
       %li
-        %a{href: "#"} CONTACTO      
+        %a{href: "#"} CONTACTO
+      %li
+        = link_to "LUGARES", venues_path
   - if current_user
     .user-section
       .img

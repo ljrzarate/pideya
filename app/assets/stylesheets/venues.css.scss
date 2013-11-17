@@ -10,7 +10,14 @@
 }
 
 .form_new_venue{
-position: relative;
-display: inline-block;
-top: -110px;
+  position: relative;
+  display: inline-block;
+  top: -92px;
+}
+
+.btn-new-venue {
+  position: absolute;
+  top: 164px;
+  right: 14px;
+  z-index: 1;
 }
