@@ -14,7 +14,7 @@ jQuery ->
       $("#venue_latitude").val(e.latLng.lat())
       $("#venue_longitude").val(e.latLng.lng())
       map.addMarker(
-        icon: 'http://google.com/mapfiles/ms/micons/lightblue.png'
+        icon: 'http://i.imgur.com/rwAfddO.png'
         lat: e.latLng.lat()
         lng: e.latLng.lng()
         draggable: true
