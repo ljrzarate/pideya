@@ -1,5 +1,5 @@
 class VenuesController < ApplicationController
-  before_filter :require_user
+  before_filter :require_user, only: [:new, :create]
 
   def index
     @venues = Venue.scoped
