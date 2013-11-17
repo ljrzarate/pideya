@@ -1,5 +1,5 @@
 class VenuesController < ApplicationController
-  before_filter :logged_in
+  before_filter :logged_in, only: :index
 
   def index
     @venues = Venue.scoped
