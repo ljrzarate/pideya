@@ -6,19 +6,19 @@
       %p.desc Llenar los campos a continucacion
       %section
         = form_for @venue, html:{multipart: true, class: "form-horizontal"} do |f|
-          = f.label :name
+          %label Nombre
           %br
           = f.text_field :name, class: "text"
           %br
-          = f.label :address
+          %label Address
           %br
           = f.text_field :address, class: "text"
           %br
-          = f.label :description
+          %label Descripcion
           %br
           = f.text_field :description, class: "text"
           %br
-          = f.label :owner
+          %label Dueño
           %br
           = f.text_field :owner, class: "text"
           %br
