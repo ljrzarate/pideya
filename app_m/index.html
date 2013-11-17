@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Pidelo Ya</title>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="components/lungo.css">
+    <link rel="stylesheet" href="components/lungo.theme.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="components/lungo.icon.css">
+</head>
+<body>
+	<section id="login" data-transition="slide">
+        <header>
+            <p class="title centered">Pidelo ya</p>
+        </header>
+        <article id="art_login" class="active splash">
+            <br />
+            <div class="form">
+                <fieldset class="radius-top" data-icon="user">
+                    <input type="text" placeholder="User" id="txtUser" value="">
+                </fieldset>
+                <fieldset class="radius-top" data-icon="lock">
+                    <input type="password" placeholder="Password" id="txtPassword" value="">
+                </fieldset>
+                <br/>
+                <a href="#" class="accept button anchor" data-icon="signin" data-label="Entrar" data-action="login"></a>
+            </div>
+        </article>
+    </section>
+    <section id="main" data-transition="cover">
+    	<header>
+            <p class="title centered">Home</p>
+        </header>
+    	<article id="art_map">
+    		<div id="map" style="width: 100%;height: 100%;"></div>
+    	</article>
+    	<footer>
+    		<nav>
+    			<a href="#" data-action="locate" data-icon="map-marker"></a>
+    			<a href="#" data-action="food" data-icon="food"></a>
+    		</nav>
+    	</footer>
+    </section>
+
+	<script src="components/quo.js"></script>
+    <script src="components/lungo.js"></script>
+    <script src="components/monocle.js"></script>
+    <script src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
+    <script src="components/jquery-1.10.2.min.js"></script>
+
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <script src="app/controller/login.js"></script>
+    <script src="app/controller/main.js"></script>
+    <!-- LungoJS - Sandbox App -->
+    <script>
+    	Parse.initialize("T9YMo09JqifZM1DBfktTQh1NyQGfVOGx0n13RkZj", "zOpSHfIt5Wfsz8uFsv2DR7ghDU5I1kQAXI5mUtOY");
+        Lungo.init({
+            name: 'Pideloya',
+            version: '1'
+        });
+    </script>
+</body>
+</html>
