@@ -165,7 +165,7 @@ header .logo{
 
 .wrapper .pricing{
   height: 890px;
-  background-image: image_url("sandwich_rojo.jpg");
+  background-image:image_url("sandwich_rojo.jpg");
 }
 
 .wrapper .pricing .main-title{
@@ -189,13 +189,105 @@ header .logo{
 }
 
 .prices-container{
+  margin: 0 auto;
+  margin-top: 80px;
   height: 440px;
   width: 751px;
 }
 
 .prices-container .prices-names{
+  text-align: center;
   background-color: #fff;
   height: 150px;
   width: 230px;
+  border-radius: 10px;
+}
+
+.prices-container .prices-body{
+  margin-top: 1px;
+  margin-right: 30px;
+  background-color: #fff;
+  height: 287px;
+  width: 230px;
+  border-radius: 10px;
+}
+
+.prices-group{
+  display: inline;
+}
+
+footer{
+  height: 133px;
+}
+
+footer p{
+  float: left;
+  margin-left: 50px;
+  vertical-align: middle;
+}
+
+footer .social{
+  float: right;
+  margin-right: 50px;
+  vertical-align: middle;
+}
+
+.wrapper .map{
+  height: 532px;
+  background-image:image_url("map-background.png");
+}
+
+.map .marker{
+  position: absolute;
+  top: 400px;
+  left:700px;
+}
+
+.map .place-info{
+  border-radius: 5px;
+  position: absolute;
+  width: 315px;
+  height: 156px;
+  background-color: #fff;
+  opacity: 0.8;
+  top: 150px;
+  left:800px;
+}
+
+.map .place-info .big-marker{
+  padding:15px;
+  float:left;
+  width:80px;
+}
+
+.map .place-info .info{
+  margin-top: 30px;
+  float:right;
+  width:190px;
+  font-size: 12px;
+}
+
+.map .place-info .info p{
+  margin: 0 0 5px 0;
+}
+
+.map .place-info .info .place-title{
+  color: red;
+  font-size: 15px;
+}
+
+.map .show-place{
+  height: 500px;
+  position:absolute;
+  top: 120px;
+  left: 180px;
+}
+
+.map .show-place .place-header{
+  position:absolute;
+  background-color: #ff0000;
+  height: 205px;
+  width: 323px;
+  opacity: 0.6;
   border-radius: 10px;
 }

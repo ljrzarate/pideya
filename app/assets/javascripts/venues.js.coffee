@@ -29,7 +29,7 @@ jQuery ->
       map.addMarker(
        lat: window.user_latitude
        lng: window.user_longitude
-       icon: "http://maps.google.com/intl/en_us/mapfiles/ms/micons/blue.png"
+       icon: "https://dl-web.dropbox.com/get/USER_ICON.png?w=AACTWjE3IpXaMEQMaqiMil8jXpB5bsUVTnUCRENI6fUsvA"
       )
 
     getLocation()
@@ -49,8 +49,6 @@ jQuery ->
             lat: venues[index]["latitude"]
             lng: venues[index]["longitude"]
             icon: "https://dl-web.dropbox.com/get/marker_small.png?w=AACy2_htYlyceIOsk7soBYaJSKeqUoa4TTwldTnivsMeQA"
-            infoWindow:
-              content: '<p>'+ name + '</p>' + '<p>' +  phone + '</p>'
             click: (e)->
               msj = '<h3>' + name + '</h3> <br> <p>' + description + '</p>'
               alertify.alert(msj)
