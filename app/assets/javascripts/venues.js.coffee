@@ -48,6 +48,7 @@ jQuery ->
           map.addMarker(
             lat: venues[index]["latitude"]
             lng: venues[index]["longitude"]
+            icon: "https://dl-web.dropbox.com/get/marker_small.png?w=AACy2_htYlyceIOsk7soBYaJSKeqUoa4TTwldTnivsMeQA"
             infoWindow:
               content: '<p>'+ name + '</p>' + '<p>' +  phone + '</p>'
             click: (e)->
