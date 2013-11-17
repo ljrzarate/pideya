@@ -1,0 +1,27 @@
+#map_new_venue
+
+.form_new_venue
+  = form_for @venue, html:{multipart: true, class: "form-horizontal"} do |f|
+    %div
+      = f.label :name
+      = f.text_field :name
+    %div
+      = f.label :address
+      = f.text_field :address
+    %div
+      = f.label :description
+      = f.text_field :description
+    %div
+    %div
+      = f.label :owner
+      = f.text_field :owner
+    %div
+      = f.hidden_field :latitude
+    %div
+      = f.hidden_field :longitude
+    %div
+      %br
+      = f.submit "Save Venue", class: "btn btn-primary"
+
+- content_for :javascript do
+  = javascript_include_tag "venues_new"

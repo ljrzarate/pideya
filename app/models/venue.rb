@@ -10,9 +10,7 @@ class Venue < ActiveRecord::Base
 
   friendly_id :name, use: :slugged
 
-  after_validation :geocode
-
-  geocoded_by :full_address, latitude: :latitude, longitude: :longitude
+  geocoded_by :latitude => :latitude, :longitude => :longitude
 
   api_accessible :venues do |t|
     t.add :name

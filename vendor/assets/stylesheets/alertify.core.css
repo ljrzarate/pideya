@@ -1,6 +1,8 @@
 .alertify,
 .alertify-show,
 .alertify-log {
+	opacity: 0.7 !important;
+	position: absolute !important;
 	-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
 	   -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
 	    -ms-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
@@ -28,6 +30,12 @@
 	filter:alpha(opacity=0);
 	opacity:0;
 }
+
+section#alertify{
+	top: 100px !important;
+	display: inline-block !important;
+}
+
 	.alertify-cover-hidden {
 		display: none;
 	}
@@ -96,6 +104,7 @@
 		}
 		.alertify-inner {
 			text-align: center;
+			display: inline-block !important;
 		}
 		.alertify-text {
 			margin-bottom: 15px;

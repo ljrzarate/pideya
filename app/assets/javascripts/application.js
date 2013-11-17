@@ -14,4 +14,3 @@
 //= require jquery_ujs
 //= require gmaps
 //= require alertify
-//= require_tree .
