@@ -5,8 +5,8 @@ gem 'rails', '3.2.14'
 
 gem 'pg'
 gem 'rest-client', '~> 1.6.7'
-gem 'activeadmin'
 gem 'kaminari'
+gem 'jquery-rails'
 gem "jquery-ui-rails"
 gem 'friendly_id', '~> 4.0.9'
 gem "geocoder", "1.1.8"
