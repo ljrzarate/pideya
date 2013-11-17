@@ -9,6 +9,11 @@
       %li
         %a{href: "#"} BLOG
       %li
-        %a{href: "#"} CONTACTO
-      %li
-        %a{href: "#"} INGRESAR
+        %a{href: "#"} CONTACTO      
+  .user-section
+    .img
+      %img{:src => "#{current_user.image}", :alt => ""}/
+    .body
+      %h2
+        = current_user.name
+      %a{:href =>  signout_path } SIGN OUT

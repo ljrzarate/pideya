@@ -7,9 +7,41 @@ header{
   height: 100px;
 }
 
+.user-section{
+  position: absolute;   
+  left:1130px; 
+  margin-top:-40px;
+  width:60px;
+  .img{
+    border-radius:50%;
+    margin-right:20px;
+    img{border-radius:50%;
+    }
+  }
+}
+
+.user-section .body a{
+  font-size: 10px;
+  text-decoration: none;
+  color: red;
+}
+
+.user-section .body{
+  position: absolute;   
+  left:1160px;   
+  left: 70px;
+  top: 0px;
+}
+
+.user-section h2{
+  margin: 0;
+  font-size: 12px;
+}
+
 navigation{
   float:right;
-  margin-top: 35px
+  margin-top: 35px;
+  margin-right: 100px;
 }
 
 navigation ul{

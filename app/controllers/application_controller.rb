@@ -5,6 +5,10 @@ class ApplicationController < ActionController::Base
     redirect_to root_path unless current_user
   end
 
+  def logged_in
+  	redirect_to venues_path if current_user
+  end
+
   private
 
   def current_user
