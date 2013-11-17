@@ -21,7 +21,8 @@ class VenuesController < ApplicationController
   end
 
   def get_venues
-    @venues = Venue.scoped
+    @venues = Venue.all
+    p @venues
     respond_to do |format|
       format.json { render_for_api :venues, json: @venues }
     end
