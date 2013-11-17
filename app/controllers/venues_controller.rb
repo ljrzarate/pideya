@@ -1,4 +1,6 @@
 class VenuesController < ApplicationController
+  before_filter :logged_in
+
   def index
     @venues = Venue.scoped
   end
