@@ -11,5 +11,6 @@
  *= require_self
  *= require alertify.core
  *= require alertify.default
+ *= require global
  *= require_tree .
  */

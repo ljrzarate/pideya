@@ -1,0 +1,201 @@
+body{
+  margin: 0;
+}
+
+header{
+  background-color: #f3f3f3;
+  height: 100px;
+}
+
+navigation{
+  float:right;
+  margin-top: 35px
+}
+
+navigation ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+navigation ul li{
+  padding: 5px;
+  display: inline;
+  margin-right: 60px;
+}
+
+navigation ul li a:hover{
+  color:red;
+}
+
+navigation ul li a{
+  font-family: sans-serif;
+  text-decoration: none;
+  color:#000;
+}
+
+header .logo{
+  display: inline;
+  margin-left: 205px;
+  margin-top: 30px;
+}
+
+.wrapper .social-login{
+  height: 500px;
+  background-image:image_url("hamburguesa.jpg");
+}
+
+.wrapper .social-login .main-title{
+  font-family: arial;
+  font-size: 50px;
+  color:#fff;
+  display: block;
+  padding-top: 150px;
+  padding-left: 400px;
+  margin: 0 auto;
+}
+
+.wrapper .social-login .main-desc{
+  text-align: center;
+  font-family: arial;
+  font-size: 18px;
+  color:#fff;
+  display: block;
+  padding-top: 30px;
+  padding-left: 100px;
+  margin: 0 auto;
+}
+
+.wrapper .social-login a.facebook{
+  display:block;
+  height:40px;
+  width:280px;
+  background-image:image_url("fb-button.png");
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  text-decoration: none;
+  color:#fff;
+  padding: 12px;
+  margin-top: 10px;
+  margin-left: 285px;
+}
+
+.wrapper .social-login a.facebook{
+  display: inline;
+  height:40px;
+  width:280px;
+  background-image:image_url("fb-button.png");
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  text-decoration: none;
+  color:#fff;
+  padding: 12px;
+  margin-top: 10px;
+  margin-left: 320px;
+}
+
+.wrapper .social-login a.twitter{
+ display: inline;
+  height:40px;
+  width:280px;
+  background-image:image_url("tw-button.png");
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  text-decoration: none;
+  color:#fff;
+  padding: 12px;
+  margin-top: 10px;
+  margin-left: 150px;
+}
+
+.wrapper .social-login .social-buttons-container{
+  display:block;
+  margin-top: 25px;
+}
+
+.wrapper .steps{
+  height: 676px;
+}
+
+.big-question{
+  color: red;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding-top: 50px;
+  padding-left: 400px;
+}
+
+.small-desc{
+  color: #000;
+  font-size: 18px;
+  font-family: sans-serif;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.steps ul.step-buttons{
+  display: block;
+  margin-left: 150px;
+  margin-top: 100px;
+  margin-right: auto ;
+  list-style-type: none;
+}
+
+.steps ul{
+  display: block;
+  margin-left: 150px;
+  margin-right: auto ;
+  list-style-type: none;
+}
+
+.steps ul li{
+  padding: 5px;
+  display: inline;
+  margin-right: 80px;
+}
+
+.steps .step-desc{
+
+  margin-left: 20px;
+  display: inline;
+  color: red;
+  font-size: 18px;
+}
+
+.wrapper .pricing{
+  height: 890px;
+  background-image: image_url("sandwich_rojo.jpg");
+}
+
+.wrapper .pricing .main-title{
+  font-family: arial;
+  font-size: 50px;
+  color:#fff;
+  display: block;
+  padding-top: 150px;
+  padding-left: 450px;
+  margin: 0 auto;
+}
+
+.wrapper .pricing .main-desc{
+  text-align: center;
+  font-family: arial;
+  font-size: 18px;
+  color:#fff;
+  display: block;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.prices-container{
+  height: 440px;
+  width: 751px;
+}
+
+.prices-container .prices-names{
+  background-color: #fff;
+  height: 150px;
+  width: 230px;
+  border-radius: 10px;
+}
