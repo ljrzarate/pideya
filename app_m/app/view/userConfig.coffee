@@ -1,0 +1,1 @@
+class __View.UserConfig extends Monocle.View
